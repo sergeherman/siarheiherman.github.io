@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+}
+p {
+	padding: 40px 0 0 0
+}
+body {
+    background-color: navy;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+#box1 {
+	background: #9DCEFF;
+	width: 400px;
+	height: 100px;
+}
+
+.box {
+	display:inline-block;
+	background: white;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	animation-name: myanimation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	animation-direction: alternate;
+
+}
+
+@keyframes myanimation {
+	0% {background-color: darkmagenta; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+	25% {background-color: lightgoldenrodyellow; left: 50px; top: 0px; border-radius: 50% 0 0 0;}
+	50% {background-color: lightcoral; left: 50px; top: 50px; border-radius: 50% 50% 0 0;}
+	75% {background-color: lightblue; left: 0px; top: 50px; border-radius: 50% 50% 50% 0;}
+	100% {background-color: darkmagenta; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+	
+}
+
+.box2 {
+	
+	background: white;
+	width: 100px;
+	height: 100px;
+/*
+	position: relative;
+	margin: auto;
+*/
+	top:200px;
+	transition-property: background, border-radius; transform; 
+	transition-duration: 2s;
+/*	transition-timing-function: ease-in;*/
+	}
+
+.box2:hover  {
+	background: red;
+	border-radius: 50% 50% 0 0;
+	transform: rotateZ(180deg);
+}
+
+.btn {
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+	    margin:50px;
+		padding: 1rem 2rem;
+		border: #fff 1px solid;
+		opacity: 0;
+	animation-name: btn;
+	animation-duration:  8s;
+	animation-fill-mode: forwards;
+	
+	transition-property: transform;
+	transition: 1s;
+	
+	}
+
+.btn:hover {
+	transform: rotateZ(360deg);
+}
+	
+	@keyframes btn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+	
+	}
