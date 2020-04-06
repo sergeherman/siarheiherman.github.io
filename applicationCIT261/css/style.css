@@ -97,7 +97,7 @@ p {
 .trigger {
 	border: 20px solid #999;
 	background: grey;
-	background-image: url("/images/lang.png");
+	background-image: url('images/lang.jpg');
 	background-repeat: no-repeat;
 	background-size: 200px;
 	background-position: center;
